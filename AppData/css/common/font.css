@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* =======================================================
+    NanumSquare
+========================================================*/
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    src: url('../../font/NanumSquareL.eot'),
+    url('../../font/NanumSquareL.woff2') format('woff2'),
+    url('../../font/NanumSquareL.woff') format('woff'),
+    url('../../font/NanumSquareL.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url('../../font/NanumSquareR.eot'),
+    url('../../font/NanumSquareR.woff2') format('woff2'),
+    url('../../font/NanumSquareR.woff') format('woff'),
+    url('../../font/NanumSquareR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    src: url('../../AppData/font/NanumSquareB.eot'),
+    url('../../font/NanumSquareB.woff2') format('woff2'),
+    url('../../font/NanumSquareB.woff') format('woff'),
+    url('../../font/NanumSquareB.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    src: url('../../AppData/font/NanumSquareEB.eot'),
+    url('../../font/NanumSquareEB.woff2') format('woff2'),
+    url('../../font/NanumSquareEB.woff') format('woff'),
+    url('../../font/NanumSquareEB.ttf') format('truetype');
+}
+
+
+
+/* =======================================================
+    NanumSquare
+========================================================*/
+
+@font-face {
+    font-family: 'Ephesis';
+    font-weight: 400;
+    src: url('../../font/Ephesis-Regular.eot'),
+    url('../../font/Ephesis-Regular.woff2') format('woff2'),
+    url('../../font/Ephesis-Regular.woff') format('woff'),
+    url('../../font/Ephesis-Regular.ttf') format('truetype');
+}

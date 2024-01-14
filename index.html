@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./AppData/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./AppData/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./AppData/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./AppData/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./AppData/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./AppData/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./AppData/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./AppData/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./AppData/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./AppData/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./AppData/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./AppData/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./AppData/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="http://www.muzworld.com/" />
+
+    <!--플러그인 js -->
+    <script src="./AppData/js/jquery-confirm.js"></script>
+    <script src="./AppData/js/aos.js"></script>
+    <script src="./AppData/js/jquery.js"></script>
+    <script src="./AppData/js/jquery.min.js"></script>
+    <script src="./AppData/js/jquery-migrate.min.js"></script>
+
+    <!--디자인 js -->
+    <script src="./AppData/js/swiper.js"></script>
+    <script src="./AppData/js/swiper-bundle.min.js"></script>
+    <script src="./AppData/js/site/design.js"></script>
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./AppData/css/common/normalize.css"
+    />
+    <link rel="stylesheet" href="./AppData/css/common/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./AppData/css/site/swiper.css" />
+    <link rel="stylesheet" href="./AppData/css/site/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./AppData/css/site/default.css" />
+    <link rel="stylesheet" href="./AppData/css/site/common.css" />
+    <link rel="stylesheet" href="./AppData/css/site/style5.css" />
+
+    <title>뮤즈월드음악 전국장학콩쿠르</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <div id="sec1">
+        <header id="header" class="header-sec">
+          <div class="header-inner">
+            <div class="logo">
+              <a href="#">
+                <img
+                  src="./AppData/images/common/logo.png.png"
+                  alt="뮤즈월드 로고"
+                />
+              </a>
+            </div>
+            <div class="gnb">
+              <ul>
+                <li><a href="#sec2">콩쿨일정</a></li>
+                <li><a href="#sec3">포스터</a></li>
+                <li><a href="#sec4">수원·안양 콩쿠르요강</a></li>
+                <li><a href="#sec5">참가신청</a></li>
+                <li><a href="#sec6">서울제주지사</a></li>
+                <!-- <li><a href="#sec7">수상자</a></li> -->
+                <li><a href="#sec8">연주복 대여 문의</a></li>
+              </ul>
+            </div>
+            <div class="header-right">
+              <button class="btn-m-menu">
+                <span class="menu-line"></span>
+                <span class="menu-line">모바일 메뉴버튼</span>
+                <span class="menu-line"></span>
+              </button>
+              <div class="m-list">
+                <ul>
+                  <li><a href="#sec2">콩쿨일정</a></li>
+                  <li><a href="#sec3">포스터</a></li>
+                  <li><a href="#sec4">수원·안양 콩쿠르요강</a></li>
+                  <li><a href="#sec5">참가신청</a></li>
+                  <li><a href="#sec6">서울제주지사</a></li>
+                  <!-- <li><a href="#sec7">수상자</a></li> -->
+                  <li><a href="#sec8">연주복 대여 문의</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="main-visual-sec">
+          <ul class="main-visual-wrapper">
+            <li class="main-visual">
+              <div class="main-visual-img">
+                <img
+                  src="./AppData/images/main/visual02.png"
+                  alt="메인비쥬얼"
+                  class="pc"
+                />
+                <img
+                  src="./AppData/images/main/visual03_m.png"
+                  alt="메인비쥬얼"
+                  class="mobile"
+                />
+              </div>
+              <div class="main-visual-txt-area">
+                <div class="main-visual-txt">
+                  <div class="vis-tit">
+                    <span class="big-tit">뮤즈월드음악 전국장학콩쿠르</span><br><span>&</span> 뮤즈월드 드레스
+                  </div>
+                  <div class="vis-txt">
+                    20년동안 그 자리를 지켜온 뮤즈월드 전국장학콩쿠르입니다.<br>
+                    (참가시 대회에서 고급 뮤즈드레스무료대여)
+                  </div>
+                  <div class="vis-btn">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdLA52KX8pzHyfuhSguP3OG8OZZNpArifD0lSF8HO00Y_G7gA/viewform?usp=sf_link"
+                      ><span>참가하기</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 콩쿠르 일정 -->
+      <div id="sec2" class="main-sec schedule">
+        <div class="inner">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2><span class="top-tit">Muzworld</span><br />콩쿠르 일정</h2>
+              </div>
+            </div>
+            <div class="con-group">
+              <ul class="tab-btn-area">
+                <li class="tab-btn tab-btn01 active" data-tab="tab01">
+                  <span class="txt-hidden">수원</span>
+                </li>
+                <li class="tab-btn tab-btn02" data-tab="tab02">
+                  <span class="txt-hidden">안양</span>
+                </li>
+                <li class="tab-btn tab-btn03" data-tab="tab03">
+                  <span class="txt-hidden">서울</span>
+                </li>
+                <li class="tab-btn tab-btn04" data-tab="tab04">
+                  <span class="txt-hidden">제주도</span>
+                </li>
+              </ul>
+              <div class="schdl-con">
+                <div id="tab01" class="tab-con active-con">
+                  <ul>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">1월 27일 (토)</span>
+                      </p>
+                      <p class="place">경기문화재단 다산홀</p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date"
+                          >3월 1일 (공휴일)</span
+                        >
+                      </p>
+                      <p class="place">장안구민회관 한누리아트홀</p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">3월 30일 (토)</span>
+                      </p>
+                      <p class="place">경기문화재단 다산홀</p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">3월 9일 (토)</span>
+                      </p>
+                      <p class="place">안양아트센터 수리홀</p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">7월 6일 (토)</span>
+                      </p>
+                      <p class="place">안양아트센터 수리홀</p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab02" class="tab-con">
+                  <ul>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">3월 9일 (토)</span>
+                      </p>
+                      <p class="place">안양아트센터 수리홀</p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">7월 6일 (토)</span>
+                      </p>
+                      <p class="place">안양아트센터 수리홀</p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab03" class="tab-con">
+                  <ul>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">1월 27일 (토)</span>
+                      </p>
+                      <p class="place">
+                        추계예술대학교&nbsp;<span>콘서트홀</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">2월 24일 (토)</span>
+                      </p>
+                      <p class="place">
+                        추계예술대학교&nbsp;<span>콘서트홀</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">3월 30일 (토)</span>
+                      </p>
+                      <p class="place">
+                        종로 100주년기념관&nbsp;<span>연주홀</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">4월 20일 (토)</span>
+                      </p>
+                      <p class="place">
+                        종로 100주년기념관&nbsp;<span>연주홀</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">5월 25일 (토)</span>
+                      </p>
+                      <p class="place">
+                        종로 100주년기념관&nbsp;<span>연주홀</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">6월 29일 (토)</span>
+                      </p>
+                      <p class="place">
+                        종로 100주년기념관&nbsp;<span>연주홀</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab04" class="tab-con">
+                  <ul>
+                    <li>
+                      <p class="date">
+                        2024년<br /><span class="big-date">3월 3일 (일)</span>
+                      </p>
+                      <p class="place">제주문예회관&nbsp;<span>소극장</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 콩쿠르 포스터 -->
+      <div id="sec3" class="main-sec poster">
+        <div class="inner">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2>
+                  <span class="top-tit">Muzworld</span><br />콩쿠르 포스터
+                </h2>
+              </div>
+            </div>
+            <div class="con-group">
+              <div class="gallery-box">
+                <div class="gallery-main-box swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="info-img object-fit region-tit region-tit01">
+                        <img
+                          src="./AppData/images/main/img_poster1.png"
+                          alt="포스터"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="info-img object-fit region-tit region-tit02">
+                        <img
+                          src="./AppData/images/main/img_poster2.png"
+                          alt="포스터"
+                        />
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                            <div class="info-img object-fit region-tit region-tit03">
+                              <img
+                                src="./AppData/images/main/img_poster.png"
+                                alt="포스터"
+                              />
+                            </div>
+                          </div> -->
+                    <div class="swiper-slide">
+                      <div
+                        class="info-img object-fit region-tit region-tit03"
+                      ></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="info-img object-fit region-tit region-tit04">
+                        <img
+                          src="./AppData/images/main/img_poster3.jpg"
+                          alt="포스터"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          var mainSwiper = new Swiper(".gallery-main-box", {
+            slidesPerView: "1",
+            loop: true,
+            centeredSlides: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              // 화면의 넓이가 640px 이상일 때
+              768: {
+                slidesPerView: 3,
+              },
+            },
+          });
+        });
+      </script>
+
+      <!-- 콩쿠르 요강 -->
+      <div id="sec4" class="main-sec guideline">
+        <div class="inner">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2 class="wt-txt">
+                  <span class="top-tit">Muzworld</span><br />콩쿠르 요강
+                </h2>
+              </div>
+            </div>
+            <div class="con-group">
+              <div class="guideline-txt-area clear">
+                <ul class="left">
+                  <li>
+                    <div class="guideline-tit">수원 · 안양 모집요강</div>
+                    <div class="list-txt guideline-dcs">
+                      서울지사와 제주도지사는 아래 모집요강이 상이할 수
+                      있습니다.
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">참가부문</div>
+                    <div class="list-txt">피아노 , 성악 , 관현악</div>
+                  </li>
+
+                  <li>
+                    <div class="list-tit">참가곡</div>
+                    <div class="list-txt">
+                      자유곡 1곡 (모든 곡 암보로 반복없이 연주)
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">심사방법</div>
+                    <div class="list-txt">
+                      각학년 부문별 2~3인 심사위원의 합계 평균점수로
+                      절대평가이며 학년별 경연 종로시 바로 점수 공개함(심사평
+                      배부)
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">특 전</div>
+                    <div class="list-txt">
+                      준대상 이상 수상자는 뮤즈월드신문 홈페이지에서 시상내역
+                      게재함 <br />
+                      참가자 전원에게 뮤즈드레스(유료로 대여 중인) 고급 드레스
+                      및 턱시도 무료대여
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">부분별대상</div>
+                    <div class="list-txt">
+                      <table style="table-layout: auto; table-layout: fixed">
+                        <colgroup>
+                          <col width="25%" />
+                          <col width="25%" />
+                          <col width="50%" />
+                        </colgroup>
+                        <caption class="txt-hidden">
+                          부분별 대상
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th>전체대상</th>
+                            <td>전체 1명</td>
+                            <td>상장,트로피,장학금</td>
+                          </tr>
+                          <tr>
+                            <th>대상</th>
+                            <td>학년별 1명</td>
+                            <td>상장,트로피,장학금</td>
+                          </tr>
+                          <tr>
+                            <th>준대상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피,장학금</td>
+                          </tr>
+                          <tr>
+                            <th>차상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th>준차상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th>특상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th>최우수상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th>우수상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th>금상</th>
+                            <td>&nbsp;</td>
+                            <td>상장,트로피</td>
+                          </tr>
+                          <tr>
+                            <th colspan="3">
+                              지도자 상 8명 이상 참가학원 (지도자상)<br />
+                              우수학원 지정패 (10명 이상 심의를 거쳐 수여)
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="left">
+                  <li>
+                    <div class="list-tit">참가자격</div>
+                    <div class="list-txt">
+                      유치부 , 초등부 , 중등부 , 고등부 , 일반부
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">심사위원</div>
+                    <div class="list-txt">
+                      현직 음대교수로 구성되며 당일 행사장 발표
+                      <p class="small-gr-txt">
+                        관현악 및 성악 경연 참가자가 소수일 경우 피아노부문
+                        심사위원으로 대체함
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">참가비</div>
+                    <div class="list-txt">
+                      유·초등부(9만원)<br />성악·관현악·중·고등부(9만원) 포헨즈
+                      각 (7만원) <br />
+                      입시평가 1곡(6만원) , 2곡(11만원)
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">주의사항</div>
+                    <div class="list-txt list-table">
+                      <ul class="list-number">
+                        <li>관력안,성악반주자는 참가자 본인이 동반합니다.</li>
+                        <li>
+                          심사위원이 충분히 들었다고 인정되었을 경우 연주를
+                          중단할 수 있습니다.
+                        </li>
+                        <li>
+                          각 학년 끝나면 접수처에서 교수님 심사평 받으시고 시상
+                          내역을 확인합니다.
+                        </li>
+                        <li>
+                          최근 3개월 이내 타 콩쿠르에서 대상 이상 받은 곡으로는
+                          참가 신청할 수 없습니다.
+                        </li>
+                        <li>
+                          대관 규정상 경연장 내 음식물이나 화환은 반입
+                          금지합니다.
+                        </li>
+                        <li>
+                          조용한 경연 분위기 위해 소리나는 사진,비디오 촬영
+                          금지합니다.
+                        </li>
+                        <li>
+                          학년별 10명 미만일 경우 장학금 및 부상 미지급합니다.
+                        </li>
+                        <li>경연 5일 전까지 참가 취소 및 환불은 불가합니다.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">신청방법</div>
+                    <div class="list-txt list-table">
+                      <ul>
+                        <li>전화 010-9955-5092(카톡으로 접수하기)</li>
+                        <li>
+                          인터넷 www.muzworld.com에서 직접신청하기<br />(매 대회
+                          5일 전까지 접수)
+                        </li>
+                        <li>
+                          <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfdycl9nxJai_h2-BaLuMTIYfSMu9h4nKpb8hsjLB8IQQ0Bzg/viewform?usp=sf_link"
+                            target="_blank"
+                            >구글폼 참가신청하기</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-tit">후원</div>
+                    <div class="list-txt">
+                      뮤즈월드신문 / 뮤즈월드 드레스
+                      <p>
+                        (학원 연주회 드레스 , 턱시도 , 헤어메이크업 상담문의
+                        010-9955-5092)
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="host-txt">
+                    <div class="list-tit">주최</div>
+                    <div class="list-txt list-logo">
+                      <img
+                        src="./AppData/images/common/logo.png.png"
+                        alt="뮤즈월드 로고"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 참가신청하기 -->
+      <div id="sec5" class="main-sec contact-btn">
+        <div class="inner">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2>
+                  <span class="top-tit">Muzworld</span><br />수원 · 안양<br />
+                  참가신청하기<br />
+                </h2>
+              </div>
+            </div>
+            <div class="con-group contact-btn-group">
+              <ul>
+                <li>
+                  <a href="tel:01099555092">
+                    <div class="contact-btn-box">
+                      <div class="contact-btn-img btn-img01"></div>
+                      <p>콩쿨 참가 문의 연락처<br />010-9955-5092</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- <li>
+                    <a href="mailto:kksy9955@daum.net">
+                      <div class="contact-btn-box">
+                        <div class="contact-btn-img btn-img02"></div>
+                        <p>
+                          참가신청서<br />
+                          이메일 작성
+                        </p>
+                      </div>
+                    </a>
+                    <a href="/AppData/file/muzworld_participate.hwp" download
+                      ><span class="download-btn copy-btn"
+                        >참가신청서 다운로드</span
+                      ></a
+                    >
+                  </li> -->
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdLA52KX8pzHyfuhSguP3OG8OZZNpArifD0lSF8HO00Y_G7gA/viewform?usp=sf_link"
+                    target="_blank"
+                  >
+                    <div class="contact-btn-box">
+                      <div class="contact-btn-img btn-img03"></div>
+                      <p>참가신청서<br />작성하기</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:01099555092">
+                    <div class="contact-btn-box">
+                      <div class="contact-btn-img btn-img04"></div>
+                      <p>
+                        전국<br />
+                        지사 모집
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfdycl9nxJai_h2-BaLuMTIYfSMu9h4nKpb8hsjLB8IQQ0Bzg/viewform?usp=sf_link"
+                    target="_blank"
+                  >
+                    <div class="contact-btn-box">
+                      <div class="contact-btn-img btn-img05"></div>
+
+                      <p>
+                        연주회<br />
+                        드레스 대여 문의
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 콩쿠르 지사장 -->
+      <div id="sec6" class="main-sec region">
+        <div class="inner">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2>
+                  <span class="top-tit">Muzworld</span><br />그 외 콩쿠르 지사
+                </h2>
+              </div>
+            </div>
+            <div class="con-group">
+              <div class="region-wrap">
+                <ul>
+                  <li>
+                    <a href="https://muzworld.hompee.com/" target="_blank">
+                      <div class="region-box">
+                        <p>서울지사<br />홈페이지</p>
+                        <div class="region-img">
+                          <img
+                            src="./AppData/images/main/img_piano.png"
+                            alt="바이올린"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:01029554228">
+                      <div class="region-box">
+                        <p>
+                          제주도지사<br />연락처<br /><span class="region-num"
+                            >010-2955-4228</span
+                          >
+                        </p>
+                        <div class="region-img">
+                          <img
+                            src="./AppData/images/main/img_violin.png"
+                            alt="바이올린"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 콩쿠르 수상자 -->
+      <!-- <div id="sec7" class="main-sec winner">
+        <div class="inner ">
+          <div class="contents">
+            <div class="tit-group">
+              <div class="tit">
+                <h2>
+                  <span class="top-tit">Muzworld</span><br />콩쿠르 수상자
+                </h2>
+              </div>
+            </div>
+            <div class="con-group">
+              <ul class="winner-tab">
+                <li data-tab="winner-tab01" class="winner-tab-btn active">
+                  301회
+                </li>
+                <li data-tab="winner-tab02" class="winner-tab-btn">300회</li>
+              </ul>
+              <div class="winner-tab-wrap">
+                <div id="winner-tab01" class="winner-tab-group active-con">
+                  <div class="winner-box-swiper swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제301회(2023년)</p>
+                          <p class="wn-grade">초등부 1학년</p>
+                          <p class="wn-price">전체대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="winner-tab02" class="winner-tab-group">
+                  <div class="winner-box-swiper swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade"></p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                          7
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="winner-txt">
+                          <p class="wn-day">제300회(2023년)</p>
+                          <p class="wn-grade">중등부 2학년</p>
+                          <p class="wn-price">대상</p>
+                          <div class="winner-info">
+                            <p class="wn-name">홍길동</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          var mainSwiper = new Swiper(".winner-box-swiper", {
+            slidesPerView: "4",
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        });
+      </script> -->
+
+      <!-- 콩쿠르 드레스 -->
+      <div id="sec8" class="main-sec dress">
+        <div class="inner">
+          <div class="dress-con">
+            <div class="dress-right-con">
+              <div class="dress-tit">
+                <span class="top-tit">Muzdress</span><br />
+                <span class="bold-txt"
+                  >뮤즈드레스 대여<span class="bot-tit"
+                    >(드레스&턱시도)</span
+                  ></span
+                >
+                <div class="small-txt">
+                  15년 이상의 오랜 노하우와<br class="m-br"> 아름다운 드레스로 연주회를
+                  장식해보세요.
+                </div>
+              </div>
+              <div class="dress-txt">
+                <p class="bold-txt">매년 신상 드레스 입고</p>
+                <p>의상 500벌 이상 구비 (단체 대여 대환영)</p>
+                <p>의상에 걸맞는 헤어와 메이크업 서비스</p>
+              </div>
+              <div class="dress-btn">
+                <ul>
+                  <li>
+                    <div class="vis-btn">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfdycl9nxJai_h2-BaLuMTIYfSMu9h4nKpb8hsjLB8IQQ0Bzg/viewform?usp=sf_link"
+                        target="_blank"
+                        class="contact-side"
+                        ><span>문의하기</span></a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="vis-btn dress-ex">
+                      <span>연주복미리보기</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dress-left-con"></div>
+          </div>
+          <div class="dress-number"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-logo"></div>
+          <div class="footer-list">
+            <ul>
+              <li>뮤즈월드</li>
+              <li>대표자명 : 김영숙</li>
+              <li>전화번호 : 031-214-5092 / 010-9955-5092</li>
+              <li>팩스번호 : 031 - 214 - 5093</li>
+            </ul>
+            <ul>
+              <li>주소 : 경기도 수원시 영통구 매영로 35번길 5,102호(매탄동)</li>
+              <li>사업자등록번호 : 135-31-24789</li>
+            </ul>
+            <p>Copyright 2013. 뮤즈월드 all rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <div class="btn-float">
+        <div class="float-top floating" style="display: none">
+          <div class="img-top"></div>
+          <span class="txt-top">TOP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- E : contact -->
+
+        <!-- S : popup-wrapper -->
+        <div class="popup-wrapper">
+          <div class="popup">
+            
+            <div class="pop-content">
+              <div class="swiper popup-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress01.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress02.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress03.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress04.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress05.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress06.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress07.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress08.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress09.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress10.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress11.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+    
+              <div class="swiper thumb-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress01.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress02.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress03.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress04.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress05.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress06.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress07.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress08.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress09.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress10.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dress-img">
+                      <img src="./AppData/images/main/dress/img_dress11.png" alt="드레스사진"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-close"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg><span>닫기</span></div>
+          </div>
+          
+        </div>
+        <!-- E : popup-wrapper -->
+    
+        <script>
+          $(document).ready(function () {
+            // 썸네일 슬라이더
+            var thumbSlider = new Swiper(".thumb-swiper", {
+              slidesPerView: 11,
+              loopedSlides: 11,
+              spaceBetween: 4,
+              watchSlidesProgress: true,
+              loop: true,
+            });
+    
+            var popupSwiper = new Swiper(".popup-swiper", {
+              effect: "fade",
+              loop: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              //pagination: {
+              //  el: ".swiper-pagination",
+              //  clickable: true,
+              //},
+              thumbs: {
+                swiper: thumbSlider,
+              },
+            });
+            //thumbSlider.controller.control = popupSwiper;
+            //popupSwiper.controller.control = thumbSlider;
+          });
+          $(document).ready(function (){
+            $('.dress-ex').click(function(){
+              $('.popup-wrapper').fadeIn(1000);
+            });
+            $('.btn-close').click(function(){
+              $('.popup-wrapper').fadeOut(1000);
+            });
+
+          });
+        </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
